@@ -1,0 +1,17 @@
+1)	Open terminal and change command execution to current folder path (the folder in which
+	Server code is stored).
+
+2)	On the terminal type: 	python3 <<filename.py>> <<server tcp socket port>> <<server udp socket port>>
+	In this case:	python3 gd4139_IMServer.py 6000 6001
+
+3)	In the client side operating system, download the client.py file. Change command execution
+	to current folder (the folder in which	Client code is stored).
+
+4)	On the terminal type:
+	python3 <<filename.py>> <<client tcp socket port>> <<client udp socket port>> <<server IP address>> <<server tcp socket port>> <<server udp socket port>>
+
+	In this case: python3 gd4139_IMClient.py 7000 7001 127.0.0.1 6000 6001.
+	Repeat the sequence for client 2.
+
+*******Note: The server tcp and udp socket port number entered on the client must match the server tcp and udp port numbers
+	entered on the server side. In this case: 6000 and 6001
